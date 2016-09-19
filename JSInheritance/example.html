@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JS Inheritance</title>
+    <meta name="description" content="Example for inheritence in Javascript" />
+    <meta name="author" content="Ricardo Rodrigues">
+
+    <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+
+<body>
+    <h1>JS Inheritance</h1>
+    <p>Use parent class method:</p>
+    <code>
+        parent.add()<br>
+        <span id="parentSpan"></span>
+    </code>
+    <p>Use child class method:</p>
+    <code>
+        child.multiply()<br>
+        <span id="childSpanMultiply"></span>
+    </code>
+    <p>Use child overridden method:</p>
+    <code>
+        child.add()<br>
+        <span id="childSpanAdd"></span>
+    </code>
+
+    <script src="parent.js" type="text/javascript"></script>
+    <script src="child.js" type="text/javascript"></script>
+    <script>
+        "use strict";
+
+        var parentSpan = document.getElementById("parentSpan");
+        var parent = new Parent(5);
+        parentSpan.innerHTML = parent.add();
+
+        var childSpanMultiply = document.getElementById("childSpanMultiply");
+        var childSpanAdd = document.getElementById("childSpanAdd");
+        var child = new Child(5, 2);
+        childSpanMultiply.innerHTML = child.multiply();
+        childSpanAdd.innerHTML = child.add();
+    </script>
+</body>
+
+</html>

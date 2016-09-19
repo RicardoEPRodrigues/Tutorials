@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: calc(1em + 0.5vw);
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+body *+* {
+    margin-top: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+code {
+    display: block;
+    border-left: solid 3px #3232aa;
+    padding: 5px 5px 5px 15px;
+    margin: 5px 10%;
+    line-height: calc(1em + 0.5vw + 5px);
+    background: #eee;
+}
