@@ -11,7 +11,7 @@ html, body {
 
 body {
     font-size: calc(1em + 1vw);
-    line-height: calc(1em + 1vw);
+    line-height: calc(0.9em + 0.9vw);
 }
 
 body *+* {
@@ -29,7 +29,7 @@ img {
 h1 {
     text-align: center;
     font-size: calc(2em + 2vw);
-    line-height: calc(2em + 2vw);
+    line-height: calc(1em + 1vw);
 }
 
 h2 {

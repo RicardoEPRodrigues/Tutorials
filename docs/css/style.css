@@ -1,13 +1,10 @@
 body {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     min-height: 100vh;
     flex-direction: column;
     background-color: #eee;
     font-family: 'Lato', Arial, sans-serif;
+    background: #263A42 url('../img/hexagon.png') repeat center center / 75px auto;
+    background-attachment: fixed;
 }
 
 pre {
@@ -36,16 +33,18 @@ a {
     display: block;
 }
 
-.header {
-    background: #263A42 url('../img/hexagon.png') repeat center center / 75px auto;
+.header, .footer {
+    /*background: #263A42 url('../img/hexagon.png') repeat center center / 75px auto;
+    background-attachment: fixed;*/
     color: white;
+}
+
+.header {
     text-align: center;
-    padding: 10% 0;
+    padding: 40px 0;
 }
 
 .footer {
-    background: #263A42;
-    color: white;
     margin: 0;
     padding: 2%;
 }
@@ -56,12 +55,6 @@ a {
 }
 
 .content {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     width: 90%;
     max-width: 1408px;
     background-color: #fff;
@@ -98,9 +91,21 @@ a {
     padding-right: 10px;
 }
 
-.profile-pic img {
-    border: 1px solid #1DA884;
+.profile-pic {
     margin: 10% 0 0;
+    border: 1px solid #1DA884;
+    background: transparent url('../img/doge-600.png') no-repeat center center/ 100% 100%;
+}
+
+.profile-pic img {
+    -webkit-transition: opacity 2000ms ease-in-out 5s;
+    -moz-transition: opacity 2000ms ease-in-out 5s;
+    -o-transition: opacity 2000ms ease-in-out 5s;
+    transition: opacity 2000ms ease-in-out 5s;
+}
+
+.profile-pic img:hover {
+    opacity: 0;
 }
 
 .tutorial {
