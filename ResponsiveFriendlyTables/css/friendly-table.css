@@ -1,0 +1,19 @@
+.table-container {
+    overflow: auto;
+}
+
+table.nowrap {
+    white-space: nowrap;
+}
+
+table.wrap-mobile-m {
+    min-width: 375px;
+}
+
+table.wrap-mobile-l {
+    min-width: 425px;
+}
+
+table.wrap-tablet {
+    min-width: 768px;
+}
